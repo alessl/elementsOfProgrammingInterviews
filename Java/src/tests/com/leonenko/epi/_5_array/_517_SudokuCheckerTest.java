@@ -2,8 +2,8 @@ package com.leonenko.epi._5_array;
 
 import org.junit.jupiter.api.Test;
 
-import static com.leonenko.epi._15_rec_TODO.SudokuBoardGenerator.*;
-import static com.leonenko.epi._15_rec_TODO._159_SudokuSolver.solve;
+import static com.leonenko.epi._15_rec.SudokuBoardGenerator.*;
+import static com.leonenko.epi._15_rec._159_SudokuSolver.solve;
 import static com.leonenko.epi._5_array._517_SudokuChecker.isValid;
 import static org.assertj.core.api.Assertions.assertThat;
 
