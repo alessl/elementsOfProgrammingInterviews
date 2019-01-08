@@ -14,15 +14,11 @@ public class _102_SortIncrDecrList_1 {
         var startIdx = 0;
 
         for (int endIdx = 1; endIdx <= list.size(); endIdx++) {
-            var isListEnd = endIdx == list.size();
+            var isSubListEnd = endIdx == list.size()
+                    || isIncreaing && list.get(endIdx - 1) > list.get(endIdx)
+                    || !isIncreaing && list.get(endIdx - 1) < list.get(endIdx);
 
-            var isDecrStart = !isListEnd
-                    && isIncreaing && list.get(endIdx - 1) > list.get(endIdx);
-
-            var isIncrStart = !isListEnd
-                    && !isIncreaing && list.get(endIdx - 1) < list.get(endIdx);
-
-            if (isListEnd || isDecrStart || isIncrStart) {
+            if (isSubListEnd) {
                 var sortedList = new ArrayList<>(list.subList(startIdx, endIdx));
 
                 if (!isIncreaing) {
