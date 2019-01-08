@@ -8,7 +8,7 @@ import java.util.List;
 import static com.leonenko.epi._17_greedy_TODO._171_OptimumAssignmentOfTasks.getOptimalAssignment;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _171_OptimumAssignmentOfTasks_Test {
+class _171_OptimumAssignmentOfTasksTest {
 
     @Test
     void testGetOptimalAssignment() {

@@ -9,7 +9,7 @@ import java.util.List;
 import static com.leonenko.epi._11_search._113_FindMinInSortedArrayThatWasRotated.getMinIndex;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _113_FindMinInSortedArray_ThatWasRotated_Test {
+class _113_FindMinInSortedArrayThatWasRotatedTest {
 
     @Test
     void testFindMin() {

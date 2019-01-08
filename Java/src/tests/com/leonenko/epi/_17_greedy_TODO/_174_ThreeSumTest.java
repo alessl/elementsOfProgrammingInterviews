@@ -10,7 +10,7 @@ import java.util.List;
 import static com.leonenko.epi._17_greedy_TODO._174_ThreeSum.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _174_ThreeSum_Test {
+class _174_ThreeSumTest {
 
     private MutableList<Integer> numbers;
 

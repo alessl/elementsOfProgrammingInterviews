@@ -8,7 +8,7 @@ import java.util.List;
 import static com.leonenko.epi._17_greedy_TODO._173_IntervalCovering.getMinimumVisits;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _173_IntervalCovering_Test {
+class _173_IntervalCoveringTest {
 
     @Test
     void testGetMinimumNumVisits() {

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static com.leonenko.epi._11_search._114_IntSquareRoot.squareRootOf;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _114_IntSquareRoot_Test {
+class _114_IntSquareRootTest {
 
     @Test
     void testSquareRootOf() {

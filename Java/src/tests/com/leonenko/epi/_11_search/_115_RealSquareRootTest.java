@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static com.leonenko.epi._11_search._115_RealSquareRoot.squareRoot;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _115_RealSquareRoot_Test {
+class _115_RealSquareRootTest {
 
     @Test
     void testSquareRoot() {

@@ -7,7 +7,7 @@ import java.util.List;
 import static com.leonenko.epi._11_search._111_FindFirstLastOccurrenceInSortedArray.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _111_Find111FindFirstLastOccurrenceInSortedArray2InSortedArray_Test {
+class _111_FindFirstLastOccurrenceInSortedArrayTest {
 
     @Test
     void testOnlyOneElement() {

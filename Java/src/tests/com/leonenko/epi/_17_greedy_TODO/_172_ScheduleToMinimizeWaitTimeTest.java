@@ -7,7 +7,7 @@ import java.util.List;
 import static com.leonenko.epi._17_greedy_TODO._172_ScheduleToMinimizeWaitTime.getMinimumWaitingTime;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _172_ScheduleToMinimizeWaitTime_Test {
+class _172_ScheduleToMinimizeWaitTimeTest {
 
     @Test
     void testGetMinimumWaitingTime() {

@@ -7,7 +7,7 @@ import java.util.List;
 import static com.leonenko.epi._11_search._116_Search2DArray.findEntry;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _116_Search2DArray_Test {
+class _116_Search2DArrayTest {
 
     @Test
     void testFindEntry() {
