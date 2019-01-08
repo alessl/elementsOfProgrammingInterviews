@@ -1,9 +1,9 @@
-package com.leonenko.epi._17_greedy_TODO;
+package com.leonenko.epi._17_greedy;
 
 import org.junit.jupiter.api.Test;
 
-import static com.leonenko.epi._17_greedy_TODO._176_GasUp.findStartCity1;
-import static com.leonenko.epi._17_greedy_TODO._176_GasUp.findStartCity2;
+import static com.leonenko.epi._17_greedy._176_GasUp.findStartCity1;
+import static com.leonenko.epi._17_greedy._176_GasUp.findStartCity2;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _176_GasUpTest {

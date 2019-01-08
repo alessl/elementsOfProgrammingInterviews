@@ -1,4 +1,4 @@
-package com.leonenko.epi._17_greedy_TODO;
+package com.leonenko.epi._17_greedy;
 
 import org.eclipse.collections.impl.factory.Lists;
 

@@ -1,11 +1,11 @@
-package com.leonenko.epi._17_greedy_TODO;
+package com.leonenko.epi._17_greedy;
 
-import com.leonenko.epi._17_greedy_TODO._173_IntervalCovering.Interval;
+import com.leonenko.epi._17_greedy._173_IntervalCovering.Interval;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._17_greedy_TODO._173_IntervalCovering.getMinimumVisits;
+import static com.leonenko.epi._17_greedy._173_IntervalCovering.getMinimumVisits;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _173_IntervalCoveringTest {

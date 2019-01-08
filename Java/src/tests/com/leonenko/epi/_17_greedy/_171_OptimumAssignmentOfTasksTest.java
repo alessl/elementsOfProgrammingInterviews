@@ -1,11 +1,11 @@
-package com.leonenko.epi._17_greedy_TODO;
+package com.leonenko.epi._17_greedy;
 
-import com.leonenko.epi._17_greedy_TODO._171_OptimumAssignmentOfTasks.TaskPair;
+import com.leonenko.epi._17_greedy._171_OptimumAssignmentOfTasks.TaskPair;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._17_greedy_TODO._171_OptimumAssignmentOfTasks.getOptimalAssignment;
+import static com.leonenko.epi._17_greedy._171_OptimumAssignmentOfTasks.getOptimalAssignment;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _171_OptimumAssignmentOfTasksTest {

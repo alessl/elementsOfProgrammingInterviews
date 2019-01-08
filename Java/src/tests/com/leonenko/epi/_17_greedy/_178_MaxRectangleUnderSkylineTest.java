@@ -1,8 +1,8 @@
-package com.leonenko.epi._17_greedy_TODO;
+package com.leonenko.epi._17_greedy;
 
 import org.junit.jupiter.api.Test;
 
-import static com.leonenko.epi._17_greedy_TODO._178_MaxRectangleUnderSkyline.getMaxRectangle;
+import static com.leonenko.epi._17_greedy._178_MaxRectangleUnderSkyline.getMaxRectangle;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _178_MaxRectangleUnderSkylineTest {

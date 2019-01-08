@@ -1,10 +1,10 @@
-package com.leonenko.epi._17_greedy_TODO;
+package com.leonenko.epi._17_greedy;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._17_greedy_TODO._177_MaxWaterTrappedByPairOfVerticalLines.getMaxTrappedWater;
+import static com.leonenko.epi._17_greedy._177_MaxWaterTrappedByPairOfVerticalLines.getMaxTrappedWater;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _177_MaxWaterTrappedByPairOfVerticalLinesTest {

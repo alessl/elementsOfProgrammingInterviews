@@ -1,4 +1,4 @@
-package com.leonenko.epi._17_greedy_TODO;
+package com.leonenko.epi._17_greedy;
 
 import org.eclipse.collections.api.list.MutableList;
 import org.eclipse.collections.impl.factory.Lists;
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._17_greedy_TODO._174_ThreeSum.*;
+import static com.leonenko.epi._17_greedy._174_ThreeSum.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _174_ThreeSumTest {
