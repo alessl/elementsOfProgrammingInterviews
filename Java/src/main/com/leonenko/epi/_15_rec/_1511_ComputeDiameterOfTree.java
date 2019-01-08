@@ -1,4 +1,4 @@
-package com.leonenko.epi._15_rec_TODO;
+package com.leonenko.epi._15_rec;
 
 import com.leonenko.epi.common.binarytree.SimpleBinaryTreeNode;
 import lombok.AllArgsConstructor;

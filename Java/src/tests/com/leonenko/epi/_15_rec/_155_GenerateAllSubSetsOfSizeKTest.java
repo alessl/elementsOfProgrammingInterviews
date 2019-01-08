@@ -1,10 +1,10 @@
-package com.leonenko.epi._15_rec_TODO;
+package com.leonenko.epi._15_rec;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._15_rec_TODO._155_GenerateAllSubSetsOfSizeK.enumerateAllCombinationsOfSize;
+import static com.leonenko.epi._15_rec._155_GenerateAllSubSetsOfSizeK.enumerateAllCombinationsOfSize;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _155_GenerateAllSubSetsOfSizeKTest {

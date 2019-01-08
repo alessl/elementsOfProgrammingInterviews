@@ -1,4 +1,4 @@
-package com.leonenko.epi._15_rec_TODO;
+package com.leonenko.epi._15_rec;
 
 import com.leonenko.epi.common.binarytree.SimpleBinaryTreeBuilders.SimpleBinaryTreeNodeBuilder;
 import com.leonenko.epi.common.binarytree.SimpleBinaryTreeNode;

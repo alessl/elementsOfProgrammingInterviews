@@ -1,4 +1,4 @@
-package com.leonenko.epi._15_rec_TODO;
+package com.leonenko.epi._15_rec;
 
 /**
  * Created by Alex on 5/4/2017.

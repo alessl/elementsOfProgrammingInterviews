@@ -1,10 +1,10 @@
-package com.leonenko.epi._15_rec_TODO;
+package com.leonenko.epi._15_rec;
 
 import com.leonenko.epi.common.binarytree.SimpleBinaryTreeNode;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
-import static com.leonenko.epi._15_rec_TODO._158_GenerateAllBinaryTrees.generateTrees;
+import static com.leonenko.epi._15_rec._158_GenerateAllBinaryTrees.generateTrees;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
 

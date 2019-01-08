@@ -1,10 +1,10 @@
-package com.leonenko.epi._15_rec_TODO;
+package com.leonenko.epi._15_rec;
 
 import com.leonenko.epi.common.binarytree.SimpleBinaryTreeBuilders;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static com.leonenko.epi._15_rec_TODO._1511_ComputeDiameterOfTree.diameter;
+import static com.leonenko.epi._15_rec._1511_ComputeDiameterOfTree.diameter;
 import static com.leonenko.epi.common.binarytree.SimpleBinaryTreeBuilders.*;
 import static org.assertj.core.api.Assertions.assertThat;
 

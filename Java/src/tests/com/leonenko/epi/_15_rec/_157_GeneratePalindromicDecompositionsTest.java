@@ -1,11 +1,11 @@
-package com.leonenko.epi._15_rec_TODO;
+package com.leonenko.epi._15_rec;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._15_rec_TODO._157_GeneratePalindromicDecompositions.enumeratePalindromicDecompositions;
-import static com.leonenko.epi._15_rec_TODO._157_GeneratePalindromicDecompositions.enumeratePalindromicSubStringsOfSameSize;
+import static com.leonenko.epi._15_rec._157_GeneratePalindromicDecompositions.enumeratePalindromicDecompositions;
+import static com.leonenko.epi._15_rec._157_GeneratePalindromicDecompositions.enumeratePalindromicSubStringsOfSameSize;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _157_GeneratePalindromicDecompositionsTest {

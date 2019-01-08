@@ -1,12 +1,12 @@
-package com.leonenko.epi._15_rec_TODO;
+package com.leonenko.epi._15_rec;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.Random;
 
-import static com.leonenko.epi._15_rec_TODO.SudokuBoardGenerator.generateZeroedSudokuBoard;
-import static com.leonenko.epi._15_rec_TODO.SudokuBoardGenerator.printSudokuBoard;
-import static com.leonenko.epi._15_rec_TODO._159_SudokuSolver.solve;
+import static com.leonenko.epi._15_rec.SudokuBoardGenerator.generateZeroedSudokuBoard;
+import static com.leonenko.epi._15_rec.SudokuBoardGenerator.printSudokuBoard;
+import static com.leonenko.epi._15_rec._159_SudokuSolver.solve;
 import static com.leonenko.epi._5_array._517_SudokuChecker.isValid;
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -1,4 +1,4 @@
-package com.leonenko.epi._15_rec_TODO;
+package com.leonenko.epi._15_rec;
 
 import java.util.Arrays;
 import java.util.Collections;
