@@ -1,15 +1,12 @@
 package com.leonenko.epi._24_honor_TODO;
 
-import com.leonenko.tree.Bst;
-
-import java.util.*;
 
 /**
  * Created by Alex on 5/4/2017.
  */
 public class _2413_BinaryTreePostOrderIter_TODO {
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Bst tree = getTree();
         System.out.println(tree);
         printPostOrder(tree);
@@ -81,5 +78,5 @@ public class _2413_BinaryTreePostOrderIter_TODO {
         new Random().ints(10, 0, 100 + 1)
                     .forEach(tree::insert);
         return tree;
-    }
+    }*/
 }
