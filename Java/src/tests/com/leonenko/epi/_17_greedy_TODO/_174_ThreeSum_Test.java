@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._17_greedy_TODO._174_ThreeSum_TODO.*;
+import static com.leonenko.epi._17_greedy_TODO._174_ThreeSum.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _174_ThreeSum_TODOTest {
+class _174_ThreeSum_Test {
 
     private MutableList<Integer> numbers;
 

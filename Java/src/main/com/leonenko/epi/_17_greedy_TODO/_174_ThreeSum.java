@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 import static java.util.Collections.binarySearch;
 
-public class _174_ThreeSum_TODO {
+public class _174_ThreeSum {
 
     static List<List<Integer>> findTripletsBinarySearch(List<Integer> numbers, int targetSum) {
         numbers.sort(Integer::compareTo);
