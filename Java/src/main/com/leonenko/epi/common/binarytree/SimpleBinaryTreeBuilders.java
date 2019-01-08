@@ -22,6 +22,10 @@ public class SimpleBinaryTreeBuilders {
                 .build();
     }
 
+    public static <T extends Comparable<T>> SimpleBinaryTreeNodeBuilder<T> nil() {
+        return null;
+    }
+
     public static <T extends Comparable<T>> SimpleBinaryTreeNodeBuilder<T> node(
             T key,
             SimpleBinaryTreeNodeBuilder<T> leftChild,

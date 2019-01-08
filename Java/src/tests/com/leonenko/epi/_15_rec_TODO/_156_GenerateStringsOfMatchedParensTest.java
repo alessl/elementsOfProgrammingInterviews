@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static com.leonenko.epi._15_rec_TODO._156_GenerateStringsOfMatchedParens.enumerateBalancedParentheses;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _156_GenerateStringsOfMatchedParens_Test {
+class _156_GenerateStringsOfMatchedParensTest {
 
     @Test
     void testEnumerateBalancedParenthesesCombinations() {

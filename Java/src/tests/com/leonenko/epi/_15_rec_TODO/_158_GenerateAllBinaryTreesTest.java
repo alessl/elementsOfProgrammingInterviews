@@ -8,7 +8,7 @@ import static com.leonenko.epi._15_rec_TODO._158_GenerateAllBinaryTrees.generate
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
 
-class _158_GenerateAllBinaryTrees_Test {
+class _158_GenerateAllBinaryTreesTest {
 
     @Test
     void testCreateTrees() {

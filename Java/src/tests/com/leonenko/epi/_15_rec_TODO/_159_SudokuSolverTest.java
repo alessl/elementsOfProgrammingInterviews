@@ -10,7 +10,7 @@ import static com.leonenko.epi._15_rec_TODO._159_SudokuSolver.solve;
 import static com.leonenko.epi._5_array._517_SudokuChecker.isValid;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _159_SudokuSolver_Test {
+class _159_SudokuSolverTest {
 
     private static final Random RAND = new Random();
 

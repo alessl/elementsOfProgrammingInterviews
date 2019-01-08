@@ -8,7 +8,7 @@ import static com.leonenko.epi._15_rec_TODO._157_GeneratePalindromicDecompositio
 import static com.leonenko.epi._15_rec_TODO._157_GeneratePalindromicDecompositions.enumeratePalindromicSubStringsOfSameSize;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _157_GeneratePalindromicDecompositions_Test {
+class _157_GeneratePalindromicDecompositionsTest {
 
     @Test
     void testEnumeratePalindromicDecompositions1() {

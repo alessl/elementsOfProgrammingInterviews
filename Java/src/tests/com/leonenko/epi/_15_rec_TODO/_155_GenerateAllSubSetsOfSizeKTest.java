@@ -7,7 +7,7 @@ import java.util.List;
 import static com.leonenko.epi._15_rec_TODO._155_GenerateAllSubSetsOfSizeK.enumerateAllCombinationsOfSize;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _155_GenerateAllSubSetsOfSizeK_Test {
+class _155_GenerateAllSubSetsOfSizeKTest {
 
     @Test
     void testEnumerateAllCombinations() {
