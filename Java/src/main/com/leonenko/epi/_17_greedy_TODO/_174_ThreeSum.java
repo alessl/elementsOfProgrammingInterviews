@@ -1,5 +1,7 @@
 package com.leonenko.epi._17_greedy_TODO;
 
+import org.eclipse.collections.impl.factory.Lists;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -22,8 +24,8 @@ public class _174_ThreeSum {
                 var secondNum = numbers.get(secondIndex);
                 var thirdNum = targetSum - (firstNum + secondNum);
 
-                int thirdIndex =
-                        binarySearch(numbers.subList(secondIndex + 1, numbersSize), thirdNum);
+                var thirdIndex = binarySearch(numbers.subList(secondIndex + 1, numbersSize),
+                        thirdNum);
 
                 if (thirdIndex >= 0) {
                     triples.add(List.of(firstNum, secondNum, thirdNum));
@@ -63,7 +65,7 @@ public class _174_ThreeSum {
         return findKTuplesTwoIterators(numbers, targetKSum, 0, k);
     }
 
-    static List<List<Integer>> findKTuplesTwoIterators(List<Integer> numbers,
+    private static List<List<Integer>> findKTuplesTwoIterators(List<Integer> numbers,
             int targetKSum, int start, int k) {
 
         if (k == 2) {
@@ -97,7 +99,7 @@ public class _174_ThreeSum {
             var currTwoSum = possibleFirstNum + possibleSecondNum;
 
             if (currTwoSum == targetTwoSum) {
-                pairs.add(new ArrayList<>(List.of(possibleFirstNum, possibleSecondNum)));
+                pairs.add(Lists.mutable.of(possibleFirstNum, possibleSecondNum));
 
                 rightIndex--;
                 leftIndex++;
