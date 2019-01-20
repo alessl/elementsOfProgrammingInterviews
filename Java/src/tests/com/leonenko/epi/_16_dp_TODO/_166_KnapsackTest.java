@@ -1,11 +1,11 @@
 package com.leonenko.epi._16_dp_TODO;
 
-import com.leonenko.epi._16_dp_TODO._166_Knapsack_TODO.KnapsackItem;
+import com.leonenko.epi._16_dp_TODO._166_Knapsack.KnapsackItem;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._16_dp_TODO._166_Knapsack_TODO.getMaxKnapsackValue;
+import static com.leonenko.epi._16_dp_TODO._166_Knapsack.getMaxKnapsackValue;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _166_KnapsackTest {
@@ -14,12 +14,14 @@ class _166_KnapsackTest {
     void testGetMaxKnapsackValue() {
         var items = List.of(new KnapsackItem(60, 5),
                 new KnapsackItem(50, 3),
+                new KnapsackItem(40, 1),
                 new KnapsackItem(70, 4),
-                new KnapsackItem(30, 2));
+                new KnapsackItem(30, 2),
+                new KnapsackItem(20, 1));
         var maxCapacity = 5;
 
         int maxKnapsackValue = getMaxKnapsackValue(items, maxCapacity);
 
-        assertThat(maxKnapsackValue).isEqualTo(80);
+        assertThat(maxKnapsackValue).isEqualTo(110);
     }
 }

@@ -1,7 +1,9 @@
 package com.leonenko.epi._18_graph;
 
+import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * Created by Alex on 5/12/2017.
@@ -31,23 +33,28 @@ public class _182_PaintBoolMatrix {
         var queue = new LinkedList<>(List.of(new Point(startRow, startCol)));
 
         while (!queue.isEmpty()) {
-            var currPoint = queue.poll();
+            visitPoint(queue, matrix, colorToFlip);
+        }
+    }
 
-            matrix[currPoint.row()][currPoint.col()] = !colorToFlip;
+    private static void visitPoint(Queue<Point> queue, boolean[][] matrix, boolean colorToFlip) {
+        var currPoint = queue.poll();
 
-            for (int[] direction : DIRECTIONS) {
-                var nextRow = currPoint.row() + direction[0];
-                var nextCol = currPoint.col() + direction[1];
+        matrix[currPoint.row()][currPoint.col()] = !colorToFlip;
 
-                if (isLegalPoint(matrix, nextRow, nextCol, colorToFlip)) {
-                    queue.add(new Point(nextRow, nextCol));
-                }
+        for (int[] direction : DIRECTIONS) {
+            var nextRow = currPoint.row() + direction[0];
+            var nextCol = currPoint.col() + direction[1];
+
+            if (isLegalPoint(matrix, nextRow, nextCol, colorToFlip)) {
+                queue.add(new Point(nextRow, nextCol));
             }
         }
     }
 
     private static boolean isLegalPoint(boolean[][] matrix, int row, int col, boolean startColor) {
-        return row >= 0 && row < matrix.length && col >= 0 && col < matrix[row].length
-                && matrix[row][col] == startColor;
+        boolean isRowWithinBounds = row >= 0 && row < matrix.length;
+        boolean isColWithinBounds = col >= 0 && col < matrix[row].length;
+        return isRowWithinBounds && isColWithinBounds && matrix[row][col] == startColor;
     }
 }

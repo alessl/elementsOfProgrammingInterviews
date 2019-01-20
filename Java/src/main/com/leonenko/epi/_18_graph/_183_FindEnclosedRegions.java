@@ -48,16 +48,16 @@ public class _183_FindEnclosedRegions {
             var nextRow = row + direction[0];
             var nextCol = col + direction[1];
 
-            if (isLegalTransition(m, nextRow, nextCol, visited)) {
+            if (!visited[row][col] && isLegalTransition(m, nextRow, nextCol)) {
                 visit(m, nextRow, nextCol, visited);
             }
         }
     }
 
-    private static boolean isLegalTransition(int[][] m, int row, int col, boolean[][] visited) {
-        var isWithinBounds = row >= 0 && row < m.length && col >= 0 && col < m[row].length;
-
-        return isWithinBounds && isOpen(m, row, col) && !visited[row][col];
+    private static boolean isLegalTransition(int[][] m, int row, int col) {
+        var isRowWithinBounds = row >= 0 && row < m.length;
+        var isColWithinBounds = col >= 0 && col < m[row].length;
+        return isRowWithinBounds && isColWithinBounds && isOpen(m, row, col);
     }
 
     private static boolean isOpen(int[][] m, int row, int col) {

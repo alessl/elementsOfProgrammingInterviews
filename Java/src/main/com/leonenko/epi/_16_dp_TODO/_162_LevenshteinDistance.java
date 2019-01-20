@@ -47,6 +47,25 @@ public class _162_LevenshteinDistance {
         return table[firstStr.length()][secondStr.length()];
     }
 
+    static int getMinimumDistanceDPOptimized(String firstStr, String secondStr) {
+        int[][] table = new int[firstStr.length() + 1][secondStr.length() + 1];
+
+        IntStream.range(0, secondStr.length() + 1).forEach(i -> table[0][i] = i);
+        IntStream.range(0, firstStr.length() + 1).forEach(i -> table[i][0] = i);
+
+        for (int i = 1; i <= firstStr.length(); i++) {
+            for (int j = 1; j <= secondStr.length(); j++) {
+                if (firstStr.charAt(i - 1) == secondStr.charAt(j - 1)) {
+                    table[i][j] = table[i - 1][j - 1];
+                } else {
+                    table[i][j] = Math.min(Math.min(table[i - 1][j], table[i][j - 1]), table[i - 1][j - 1]) + 1;
+                }
+            }
+        }
+
+        return table[firstStr.length()][secondStr.length()];
+    }
+
     // https://www.geeksforgeeks.org/minimum-number-deletions-make-string-palindrome/
     // https://www.geeksforgeeks.org/minimum-number-deletions-make-string-palindrome-set-2/
     static int getMinDeletionsToMakePalindrome(String str) {

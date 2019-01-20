@@ -8,6 +8,7 @@ import java.util.LinkedList;
 public class _176_GasUp {
 
     private static final int MPG = 20;
+    private static final String RESULT_MESSAGE_FORMAT = "Start at city '%s'";
 
     static char findStartCity1(int[] distanceToNext, int[] availableGas, char[] cities) {
         var visitedCities = new LinkedList<Integer>();
@@ -16,7 +17,7 @@ public class _176_GasUp {
 
         while (visitedCities.size() < cities.length) {
            while (remainingGas < 0 && !visitedCities.isEmpty()) {
-               int visitedCity = visitedCities.poll();
+               var visitedCity = visitedCities.poll();
                remainingGas += -availableGas[visitedCity] + distanceToNext[visitedCity] / MPG;
            }
 
@@ -24,7 +25,7 @@ public class _176_GasUp {
            visitedCities.add(city);
            city = (city + 1) % cities.length;
         }
-        System.out.printf("Start at city '%s'", cities[visitedCities.peek()]);
+        System.out.printf(RESULT_MESSAGE_FORMAT, cities[visitedCities.peek()]);
 
         return cities[visitedCities.peek()];
     }
@@ -35,7 +36,7 @@ public class _176_GasUp {
         int remainingGas = 0;
 
         for (int currCity = 1; currCity < cities.length; currCity++) {
-            int prevCity = currCity - 1;
+            var prevCity = currCity - 1;
             remainingGas += availableGas[prevCity] - distanceToNext[prevCity] / MPG;
 
             if (remainingGas < minRemainingGas) {
@@ -43,7 +44,7 @@ public class _176_GasUp {
                 minRemainingGas = remainingGas;
             }
         }
-        System.out.printf("Start at city '%s'", cities[minRemainingGasCity]);
+        System.out.printf(RESULT_MESSAGE_FORMAT, cities[minRemainingGasCity]);
 
         return cities[minRemainingGasCity];
     }

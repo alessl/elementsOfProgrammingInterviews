@@ -2,10 +2,10 @@ package com.leonenko.epi._16_dp_TODO;
 
 import org.junit.jupiter.api.Test;
 
-import static com.leonenko.epi._16_dp_TODO._169_PickUpCoinsForMaximumGain_TODO.getMaxValue;
+import static com.leonenko.epi._16_dp_TODO._169_PickUpCoinsForMaximumGain.getMaxValue;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _169_PickUpCoinsForMaximumGainTODOTest {
+class _169_PickUpCoinsForMaximumGainTest {
 
     @Test
     void testGetMaxValue() {
