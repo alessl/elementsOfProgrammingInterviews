@@ -1,8 +1,8 @@
-package com.leonenko.epi._16_dp_TODO;
+package com.leonenko.epi._16_dp;
 
 import org.junit.jupiter.api.Test;
 
-import static com.leonenko.epi._16_dp_TODO._165_SearchSequenceIn2DArray.searchPattern;
+import static com.leonenko.epi._16_dp._165_SearchSequenceIn2DArray.searchPattern;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _165_SearchSequenceIn2DArrayTest {

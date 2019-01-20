@@ -1,4 +1,4 @@
-package com.leonenko.epi._16_dp_TODO;
+package com.leonenko.epi._16_dp;
 
 import java.util.stream.IntStream;
 

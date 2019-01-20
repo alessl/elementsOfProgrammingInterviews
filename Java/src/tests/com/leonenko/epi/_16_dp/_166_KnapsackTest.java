@@ -1,11 +1,11 @@
-package com.leonenko.epi._16_dp_TODO;
+package com.leonenko.epi._16_dp;
 
-import com.leonenko.epi._16_dp_TODO._166_Knapsack.KnapsackItem;
+import com.leonenko.epi._16_dp._166_Knapsack.KnapsackItem;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._16_dp_TODO._166_Knapsack.getMaxKnapsackValue;
+import static com.leonenko.epi._16_dp._166_Knapsack.getMaxKnapsackValue;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _166_KnapsackTest {

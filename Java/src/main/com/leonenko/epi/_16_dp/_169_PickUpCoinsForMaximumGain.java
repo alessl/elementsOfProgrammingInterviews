@@ -1,4 +1,4 @@
-package com.leonenko.epi._16_dp_TODO;
+package com.leonenko.epi._16_dp;
 
 /**
  * Created by Alex on 5/7/2017.

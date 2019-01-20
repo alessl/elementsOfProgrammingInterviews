@@ -1,12 +1,11 @@
-package com.leonenko.epi._16_dp_TODO;
+package com.leonenko.epi._16_dp;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._16_dp_TODO._168_MinimumWeightPathInTriangle.getMinPathSum;
+import static com.leonenko.epi._16_dp._168_MinimumWeightPathInTriangle.getMinPathSum;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class _168_MinimumWeightPathInTriangleTest {
 
