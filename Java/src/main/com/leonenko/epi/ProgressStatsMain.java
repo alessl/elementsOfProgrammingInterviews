@@ -12,8 +12,7 @@ public class ProgressStatsMain {
 
     public static void main(String[] args) throws IOException, URISyntaxException {
         var currDir = Paths.get(
-                "/Users/leo/Documents/IdeaProjects/LeoInterview2017/" +
-                        "Java/src/java/com/leonenko/epi/");
+                "/Users/leo/Documents/GitHub/elementsOfProgrammingInterviews/java/src/main");
 
         var questionStatistics = Map.<Boolean, List<Path>>of(false, new ArrayList<>(),
                 true, new ArrayList<>());
