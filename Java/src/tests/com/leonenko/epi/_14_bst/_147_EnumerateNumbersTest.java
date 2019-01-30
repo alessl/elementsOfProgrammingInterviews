@@ -1,13 +1,13 @@
-package com.leonenko.epi._14_bst_TODO;
+package com.leonenko.epi._14_bst;
 
-import com.leonenko.epi._14_bst_TODO._147_EnumerateNumbers.ABSqrt2Number;
+import com.leonenko.epi._14_bst._147_EnumerateNumbers.ABSqrt2Number;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.leonenko.epi._14_bst_TODO._147_EnumerateNumbers.enumerateNumbersAdd;
-import static com.leonenko.epi._14_bst_TODO._147_EnumerateNumbers.enumerateNumbersBst;
+import static com.leonenko.epi._14_bst._147_EnumerateNumbers.enumerateNumbersAdd;
+import static com.leonenko.epi._14_bst._147_EnumerateNumbers.enumerateNumbersBst;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _147_EnumerateNumbersTest {

@@ -1,4 +1,4 @@
-package com.leonenko.epi._14_bst_TODO;
+package com.leonenko.epi._14_bst;
 
 import com.leonenko.epi.common.binarytree.SimpleBinaryTreeNode;
 import org.junit.jupiter.api.BeforeEach;
@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._14_bst_TODO._145_CreateBstFromTraversalData.rebuild;
-import static com.leonenko.epi._14_bst_TODO._145_CreateBstFromTraversalData.rebuild2;
+import static com.leonenko.epi._14_bst._145_CreateBstFromTraversalData.rebuild;
+import static com.leonenko.epi._14_bst._145_CreateBstFromTraversalData.rebuild2;
 import static com.leonenko.epi._9_bintree._97_IterativeInOrder.getKeysInOrder;
 import static com.leonenko.epi._9_bintree._98_IterativePreOrder.getKeysPreOrder;
 import static com.leonenko.epi.common.binarytree.SimpleBinaryTreeBuilders.*;

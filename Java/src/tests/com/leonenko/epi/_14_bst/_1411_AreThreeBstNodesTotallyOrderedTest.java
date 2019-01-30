@@ -1,4 +1,4 @@
-package com.leonenko.epi._14_bst_TODO;
+package com.leonenko.epi._14_bst;
 
 import com.leonenko.epi.common.binarytree.SimpleBinaryTreeNode;
 import org.junit.jupiter.api.BeforeEach;

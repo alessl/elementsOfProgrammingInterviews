@@ -1,4 +1,4 @@
-package com.leonenko.epi._14_bst_TODO;
+package com.leonenko.epi._14_bst;
 
 import com.leonenko.epi._9_bintree._97_IterativeInOrder;
 import com.leonenko.epi.common.binarytree.SimpleBinaryTreeNode;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._14_bst_TODO._149_BuildMinimumHeightBstFromSortedArray.*;
+import static com.leonenko.epi._14_bst._149_BuildMinimumHeightBstFromSortedArray.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _149_BuildMinimumHeightBstFromSortedArrayTest {

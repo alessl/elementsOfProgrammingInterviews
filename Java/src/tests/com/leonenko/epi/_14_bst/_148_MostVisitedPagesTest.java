@@ -1,7 +1,7 @@
-package com.leonenko.epi._14_bst_TODO;
+package com.leonenko.epi._14_bst;
 
-import com.leonenko.epi._14_bst_TODO._148_MostVisitedPages.ConstantAddAndLinearKGetImpl;
-import com.leonenko.epi._14_bst_TODO._148_MostVisitedPages.TreeSetAndHashMapImpl;
+import com.leonenko.epi._14_bst._148_MostVisitedPages.ConstantAddAndLinearKGetImpl;
+import com.leonenko.epi._14_bst._148_MostVisitedPages.TreeSetAndHashMapImpl;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

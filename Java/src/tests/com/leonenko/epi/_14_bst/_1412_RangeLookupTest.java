@@ -1,13 +1,13 @@
-package com.leonenko.epi._14_bst_TODO;
+package com.leonenko.epi._14_bst;
 
-import com.leonenko.epi._14_bst_TODO._1412_RangeLookup.Interval;
+import com.leonenko.epi._14_bst._1412_RangeLookup.Interval;
 import com.leonenko.epi.common.binarytree.SimpleBinaryTreeNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._14_bst_TODO._1412_RangeLookup.keysOfInterval;
+import static com.leonenko.epi._14_bst._1412_RangeLookup.keysOfInterval;
 import static com.leonenko.epi.common.binarytree.SimpleBinaryTreeBuilders.*;
 import static com.leonenko.epi.common.binarytree.SimpleBinaryTreeBuilders.node;
 import static org.assertj.core.api.Assertions.assertThat;

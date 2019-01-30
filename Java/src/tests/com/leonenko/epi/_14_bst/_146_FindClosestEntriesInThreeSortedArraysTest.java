@@ -1,10 +1,10 @@
-package com.leonenko.epi._14_bst_TODO;
+package com.leonenko.epi._14_bst;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._14_bst_TODO._146_FindClosestEntriesInThreeSortedArrays.findMinDistanceBetweenEntries;
+import static com.leonenko.epi._14_bst._146_FindClosestEntriesInThreeSortedArrays.findMinDistanceBetweenEntries;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _146_FindClosestEntriesInThreeSortedArraysTest {

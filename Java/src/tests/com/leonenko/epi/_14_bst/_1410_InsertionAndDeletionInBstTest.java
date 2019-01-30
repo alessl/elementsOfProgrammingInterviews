@@ -1,10 +1,10 @@
-package com.leonenko.epi._14_bst_TODO;
+package com.leonenko.epi._14_bst;
 
-import com.leonenko.epi._14_bst_TODO._1410_InsertionAndDeletionInBst.BinaryTree;
+import com.leonenko.epi._14_bst._1410_InsertionAndDeletionInBst.BinaryTree;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static com.leonenko.epi._14_bst_TODO._1410_InsertionAndDeletionInBst.createBst;
+import static com.leonenko.epi._14_bst._1410_InsertionAndDeletionInBst.createBst;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _1410_InsertionAndDeletionInBstTest {

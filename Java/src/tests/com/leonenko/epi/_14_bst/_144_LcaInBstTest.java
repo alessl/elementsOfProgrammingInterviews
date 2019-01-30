@@ -1,15 +1,15 @@
-package com.leonenko.epi._14_bst_TODO;
+package com.leonenko.epi._14_bst;
 
 import com.leonenko.epi.common.binarytree.SimpleBinaryTreeNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static com.leonenko.epi._14_bst_TODO._143_KLargestElementsInBst.getKLargestKeys;
+import static com.leonenko.epi._14_bst._144_LcaInBst.findLca;
 import static com.leonenko.epi.common.binarytree.SimpleBinaryTreeBuilders.*;
 import static com.leonenko.epi.common.binarytree.SimpleBinaryTreeBuilders.node;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class _143_KLargestElementsInBstTest {
+class _144_LcaInBstTest {
 
     private SimpleBinaryTreeNode<Integer> bst;
 
@@ -33,10 +33,11 @@ class _143_KLargestElementsInBstTest {
     }
 
     @Test
-    void testGetKLargestKeys() {
-       assertThat(getKLargestKeys(bst, 3))
-               .containsExactly(25, 20, 20);
-       assertThat(getKLargestKeys(bst, 8))
-               .containsExactly(25, 20, 20, 20, 15, 12, 10, 7);
+    void testLindLca() {
+        var lca = findLca(bst, bst.findNode(7), bst.findNode(12));
+
+        assertThat(lca)
+                .extracting(SimpleBinaryTreeNode::getKey)
+                .isEqualTo(10);
     }
 }

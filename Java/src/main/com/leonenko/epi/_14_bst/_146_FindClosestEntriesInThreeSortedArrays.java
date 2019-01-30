@@ -1,4 +1,4 @@
-package com.leonenko.epi._14_bst_TODO;
+package com.leonenko.epi._14_bst;
 
 import lombok.ToString;
 import lombok.ToString.Include;

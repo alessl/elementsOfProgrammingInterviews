@@ -1,6 +1,6 @@
-package com.leonenko.epi._14_bst_TODO;
+package com.leonenko.epi._14_bst;
 
-import com.leonenko.epi._14_bst_TODO._1413_AddCredits.ClientCredits;
+import com.leonenko.epi._14_bst._1413_AddCredits.ClientCredits;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
