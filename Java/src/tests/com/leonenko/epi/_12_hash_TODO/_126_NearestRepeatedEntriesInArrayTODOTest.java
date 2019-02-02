@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._12_hash_TODO._126_NearestRepeatedEntriesInArray_TODO.findNearestRepeatedEntries;
+import static com.leonenko.epi._12_hash_TODO._126_NearestRepeatedEntriesInArray.findNearestRepeatedEntries;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _126_NearestRepeatedEntriesInArrayTODOTest {
