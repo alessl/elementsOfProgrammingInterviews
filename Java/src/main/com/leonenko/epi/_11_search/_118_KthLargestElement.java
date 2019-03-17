@@ -9,7 +9,7 @@ public class _118_KthLargestElement {
 
     private static Random rand = new Random();
 
-    static String findKLargestElement(List<String> list, int k) {
+    public static String findKLargestElement(List<String> list, int k) {
         var leftIndex = 0;
         var rightIndex = list.size() - 1;
 
@@ -55,8 +55,9 @@ public class _118_KthLargestElement {
 
             if (pivotIndices[0] == k - 1) {
                 return list.get(pivotIndices[0]);
-            } else if (pivotIndices[1] < k - 1) {
+            } else if (pivotIndices[1] <= k - 1) {
                 leftIndex = pivotIndices[1] + 1;
+                k += (pivotIndices[1] - pivotIndices[0]);
             } else {
                 rightIndex = pivotIndices[0] - 1;
             }
