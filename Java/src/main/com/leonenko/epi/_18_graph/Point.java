@@ -5,7 +5,7 @@ import lombok.experimental.Accessors;
 
 @Accessors(fluent = true)
 @Value
-final class Point {
+public final class Point {
 
     enum PointType {
         START, OPEN, WALL, GOAL
