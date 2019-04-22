@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class _128_SmallestSubArrayContainingAllValuesSequentiallyTest {
 
     @Test
-    void testGetSubArray1() {
+    void testShortestSequentialSubArrayIsFound() {
         var minSubArray = getMinLengthSubArrayContainingAllSequentially(
                 new String[] {
                         "banana",
@@ -26,28 +26,7 @@ class _128_SmallestSubArrayContainingAllValuesSequentiallyTest {
     }
 
     @Test
-    void testGetSubArray2() {
-        var minSubArray = getMinLengthSubArrayContainingAllSequentially(
-                new String[] {
-                        "banana",
-                        "apple",
-                        "dog",
-                        "cat",
-                        "apple",
-                        "banana",
-                        "banana",
-                        "cat",
-                        "orange",
-                        "kiwi",
-                        "banana",
-                },
-                new String[] {"banana", "cat"});
-
-        assertThat(minSubArray).containsExactly("banana", "cat");
-    }
-
-    @Test
-    void testGetSubArray3() {
+    void tesDuplicatesExcluded() {
         var minSubArray = getMinLengthSubArrayContainingAllSequentially(
                 new String[] {
                         "banana",
@@ -55,7 +34,9 @@ class _128_SmallestSubArrayContainingAllValuesSequentiallyTest {
                         "banana",
                         "orange",
                         "cat",
+                        "cat",
                         "kiwi",
+                        "cat",
                 },
                 new String[] {"banana", "cat"});
 
