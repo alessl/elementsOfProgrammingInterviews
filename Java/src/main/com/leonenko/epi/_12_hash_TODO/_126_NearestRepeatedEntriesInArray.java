@@ -15,10 +15,10 @@ class _126_NearestRepeatedEntriesInArray {
         var charToIndexMap = new HashMap<Character, Integer>();
         var index = 0;
 
-        for (var c : entries) {
-            if (charToIndexMap.containsKey(c)) {
-                var prevIndex = charToIndexMap.get(c);
-                int dist = index - prevIndex;
+        for (var entry : entries) {
+            if (charToIndexMap.containsKey(entry)) {
+                var prevIndex = charToIndexMap.get(entry);
+                var dist = index - prevIndex;
 
                 if (minDistBetweenEntries > dist) {
                     nearestRepeatedEntries = List.of(prevIndex, index);
@@ -26,7 +26,7 @@ class _126_NearestRepeatedEntriesInArray {
                 }
 
             }
-            charToIndexMap.put(c, index++);
+            charToIndexMap.put(entry, index++);
         }
 
         return nearestRepeatedEntries;

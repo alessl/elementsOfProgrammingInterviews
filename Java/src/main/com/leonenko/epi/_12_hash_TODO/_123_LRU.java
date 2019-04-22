@@ -94,7 +94,7 @@ public class _123_LRU {
                 node.value = bookPrice;
                 removeNode(node);
             } else {
-                node = new ListNode(bookCode, bookPrice);
+                node = new ListNode<>(bookCode, bookPrice);
                 bookCodeToListNodeMap.put(bookCode, node);
             }
 
@@ -104,10 +104,10 @@ public class _123_LRU {
         private static final class ListNode<K, T> {
             private ListNode<K, T> next;
             private ListNode<K, T> prev;
-            private K key;
+            private final K key;
             private T value;
 
-            public ListNode(K key, T value) {
+            ListNode(K key, T value) {
                 this.key = key;
                 this.value = value;
             }
