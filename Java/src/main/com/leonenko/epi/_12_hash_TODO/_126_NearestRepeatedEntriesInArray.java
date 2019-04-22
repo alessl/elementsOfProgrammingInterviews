@@ -1,29 +1,34 @@
 package com.leonenko.epi._12_hash_TODO;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
 import java.util.HashMap;
 import java.util.List;
 
-public class _126_NearestRepeatedEntriesInArray {
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+class _126_NearestRepeatedEntriesInArray {
+
     static List<Integer> findNearestRepeatedEntries(List<Character> entries) {
-        var nearestEntries = List.<Integer>of();
-        var shortestDist = Integer.MAX_VALUE;
-        var charToIndex = new HashMap<Character, Integer>();
+        var nearestRepeatedEntries = List.<Integer>of();
+        var minDistBetweenEntries = Integer.MAX_VALUE;
+        var charToIndexMap = new HashMap<Character, Integer>();
         var index = 0;
 
         for (var c : entries) {
-            if (charToIndex.containsKey(c)) {
-                var prevIndex = charToIndex.get(c);
+            if (charToIndexMap.containsKey(c)) {
+                var prevIndex = charToIndexMap.get(c);
                 int dist = index - prevIndex;
 
-                if (shortestDist > dist) {
-                    nearestEntries = List.of(prevIndex, index);
-                    shortestDist = dist;
+                if (minDistBetweenEntries > dist) {
+                    nearestRepeatedEntries = List.of(prevIndex, index);
+                    minDistBetweenEntries = dist;
                 }
 
             }
-            charToIndex.put(c, index++);
+            charToIndexMap.put(c, index++);
         }
 
-        return nearestEntries;
+        return nearestRepeatedEntries;
     }
 }
