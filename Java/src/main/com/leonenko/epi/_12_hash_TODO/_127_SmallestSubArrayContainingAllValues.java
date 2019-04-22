@@ -74,4 +74,8 @@ public class _127_SmallestSubArrayContainingAllValues {
 
         return text.subList(minStartIndex, minStartIndex + minLength);
     }
+
+    static List<String> getSmallestSubArray(List<String> text) {
+        return getSubArray1(text, Set.copyOf(text));
+    }
 }

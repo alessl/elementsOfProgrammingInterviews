@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 import java.util.Set;
 
-import static com.leonenko.epi._12_hash_TODO._127_SmallestSubArrayContainingAllValues.getSubArray1;
-import static com.leonenko.epi._12_hash_TODO._127_SmallestSubArrayContainingAllValues.getSubArray2;
+import static com.leonenko.epi._12_hash_TODO._127_SmallestSubArrayContainingAllValues.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _127_SmallestSubArrayContainingAllValuesTest {
@@ -50,4 +49,9 @@ class _127_SmallestSubArrayContainingAllValuesTest {
         assertThat(getSubArray2(text, words)).containsExactly(expectedSubText);
     }
 
+    @Test
+    void testGetSmallestSubArray() {
+        var smallestSubArray = getSmallestSubArray(List.of("a", "b", "a", "c", "b", "b", "a", "c", "c"));
+        assertThat(smallestSubArray).containsExactly("b", "a", "c");
+    }
 }
