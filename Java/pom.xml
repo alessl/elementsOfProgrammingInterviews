@@ -5,10 +5,6 @@
     <artifactId>elements-of-programming-interview-java</artifactId>
     <version>1.0</version>
 
-    <properties>
-        <java.version>12</java.version>
-    </properties>
-
     <dependencies>
         <!--Testing-->
         <dependency>
@@ -80,5 +76,16 @@
     <build>
         <sourceDirectory>src/main</sourceDirectory>
         <testSourceDirectory>src/tests</testSourceDirectory>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <release>12</release>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 </project>
