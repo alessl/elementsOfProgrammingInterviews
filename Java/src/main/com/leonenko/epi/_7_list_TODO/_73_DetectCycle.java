@@ -4,6 +4,8 @@ import java.util.List;
 
 /**
  * Created by Alex on 5/12/2017.
+ *
+ * https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/
  */
 public class _73_DetectCycle {
 

@@ -39,18 +39,25 @@ public final class ListNode<T extends Comparable<T>> implements Comparable<ListN
     }
 
     static ListNode<Integer> generateList(List<Integer> keys) {
-        List<ListNode<Integer>> headAndTail = keys.stream()
+        var tailIndex = 1;
+        var headIndex = 0;
+
+        return keys.stream()
                 .map(ListNode::new)
                 .collect(() -> {
-                            var head = new ListNode<Integer>(null);
-                            return Arrays.asList(head, head); },
-                        (headAndTail1, node) -> {
-                            headAndTail1.get(1).setNext(node);
-                            headAndTail1.set(1, node); },
-                        (headAndTail1, headAndTail2) -> {
-                            headAndTail1.get(1).setNext(headAndTail2.get(0));
-                            headAndTail1.set(1, headAndTail2.get(1)); });
-        return headAndTail.get(0).getNext();
+                            var head = new ListNode<>(Integer.MIN_VALUE);
+                            return Arrays.asList(head, head);
+                        },
+                        (headTail, node) -> {
+                            headTail.get(tailIndex).setNext(node);
+                            headTail.set(tailIndex, node);
+                        },
+                        (headTail1, headTail2) -> {
+                            headTail1.get(tailIndex).setNext(headTail2.get(headIndex));
+                            headTail1.set(tailIndex, headTail2.get(tailIndex));
+                        })
+                .get(headIndex)
+                .getNext();
     }
 
 }
