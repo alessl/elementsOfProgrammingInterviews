@@ -9,7 +9,7 @@ import static com.leonenko.epi._7_list_TODO._712_ListPivoting.pivot;
 
 class _712_ListPivotingTest {
 
-    private final ListNode<Integer> list = ListNode.generateList(List.of(5, 1, 3, 4, 4, 6, 6, 2));
+    private final ListNode<Integer> list = ListNode.singlyLinkedListOf(List.of(5, 1, 3, 4, 4, 6, 6, 2));
 
     @Test
     void pivotDups() {

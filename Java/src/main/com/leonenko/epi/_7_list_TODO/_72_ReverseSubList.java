@@ -27,4 +27,9 @@ public class _72_ReverseSubList {
         return newListHead.getNext();
     }
 
+    public static <T extends Comparable<T>> ListNode<T> reverseDoublyLinkedSubList(
+            ListNode<T> listHead, int from, int to) {
+        return null;
+    }
+
 }

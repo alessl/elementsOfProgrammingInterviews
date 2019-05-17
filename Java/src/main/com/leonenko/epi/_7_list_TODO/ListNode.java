@@ -38,7 +38,22 @@ public final class ListNode<T extends Comparable<T>> implements Comparable<ListN
                 .iterator();
     }
 
-    static ListNode<Integer> generateList(List<Integer> keys) {
+    static ListNode<Integer> doublyLinkedListOf(List<Integer> keys) {
+        var head = singlyLinkedListOf(keys);
+
+        ListNode<Integer> prev = null;
+        ListNode<Integer> iter = head;
+
+        while (iter != null) {
+            iter.setPrev(prev);
+            prev = iter;
+            iter = iter.getNext();
+        }
+
+        return head;
+    }
+
+    static ListNode<Integer> singlyLinkedListOf(List<Integer> keys) {
         var tailIndex = 1;
         var headIndex = 0;
 

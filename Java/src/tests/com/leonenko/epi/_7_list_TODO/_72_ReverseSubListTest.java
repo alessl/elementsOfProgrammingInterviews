@@ -10,7 +10,7 @@ class _72_ReverseSubListTest {
 
     @Test
     void reverseSubList() {
-        var listHead = ListNode.generateList(List.of(1, 2, 6, 5, 4, 3, 7));
+        var listHead = ListNode.singlyLinkedListOf(List.of(1, 2, 6, 5, 4, 3, 7));
         var reversedListHead = _72_ReverseSubList.reverseSubList(listHead, 2, 5);
 
         assertList(reversedListHead, List.of(1, 2, 3, 4, 5, 6, 7));
@@ -18,7 +18,7 @@ class _72_ReverseSubListTest {
 
     @Test
     void reverseListAll() {
-        var listHead = ListNode.generateList(List.of(5, 4, 3, 2, 1));
+        var listHead = ListNode.singlyLinkedListOf(List.of(5, 4, 3, 2, 1));
         var reversedListHead = _72_ReverseSubList.reverseSubList(listHead, 0, 4);
 
         assertList(reversedListHead, List.of(1, 2, 3, 4, 5));
@@ -26,7 +26,7 @@ class _72_ReverseSubListTest {
 
     @Test
     void reverseSubListMidToEnd() {
-        var listHead = ListNode.generateList(List.of(1, 2, 3, 6, 5, 4));
+        var listHead = ListNode.singlyLinkedListOf(List.of(1, 2, 3, 6, 5, 4));
         var reversedListHead = _72_ReverseSubList.reverseSubList(listHead, 3, 5);
 
         assertList(reversedListHead, List.of(1, 2, 3, 4, 5, 6));
