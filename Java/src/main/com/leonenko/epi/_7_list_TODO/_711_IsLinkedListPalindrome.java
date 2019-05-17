@@ -1,6 +1,6 @@
 package com.leonenko.epi._7_list_TODO;
 
-public class _711_IsSinglyLinkedListPalindrome {
+public class _711_IsLinkedListPalindrome {
 
     public static boolean isPalindrome(ListNode<Integer> head) {
         var mid = findMiddle(head);
@@ -21,7 +21,11 @@ public class _711_IsSinglyLinkedListPalindrome {
     }
 
     private static ListNode<Integer> reverse(ListNode<Integer> iter) {
-        var reversedHead = new ListNode<Integer>(null, iter, null);
+        if (iter == null) {
+            return  null;
+        }
+
+        var reversedHead = new ListNode<>(null, iter, null);
 
         while (iter.getNext() != null) {
             var temp = iter.getNext();
@@ -45,8 +49,21 @@ public class _711_IsSinglyLinkedListPalindrome {
         return slowIter;
     }
 
-    public static boolean isPalindromeDoubleLinked(ListNode<Integer> head) {
-        return false;
+    public static boolean isPalindromeDoublyLinked(ListNode<Integer> head) {
+        var tail = head;
+        while (tail.getNext() != null) {
+            tail = tail.getNext();
+        }
+
+        while (head != tail) {
+            if (head.compareTo(tail) != 0) {
+                return false;
+            }
+            head = head.getNext();
+            tail = tail.getPrev();
+        }
+
+        return true;
     }
 
 }
