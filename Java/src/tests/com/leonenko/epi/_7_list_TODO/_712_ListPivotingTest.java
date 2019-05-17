@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static com.leonenko.epi._7_list_TODO.TestUtils.assertListContainsKeys;
+import static com.leonenko.epi._7_list_TODO._712_ListPivoting.pivot;
 
 class _712_ListPivotingTest {
 
@@ -26,6 +27,6 @@ class _712_ListPivotingTest {
     }
 
     private ListNode<Integer> pivotList(int pivotKey) {
-        return _712_ListPivoting.pivot(list, pivotKey);
+        return pivot(list, pivotKey);
     }
 }
