@@ -20,6 +20,34 @@ public final class ListNode<T extends Comparable<T>> implements Comparable<ListN
     private ListNode<T> next;
     private ListNode<T> prev;
 
+    public int size() {
+        return (int) Stream.iterate(
+                this,
+                Objects::nonNull,
+                node -> node.next)
+                .count();
+    }
+
+    public ListNode<T> tail() {
+        return Stream.iterate(
+                this,
+                Objects::nonNull,
+                node -> node.next)
+                .dropWhile(node -> node.getNext() != null)
+                .findFirst()
+                .orElse(null);
+    }
+
+    public ListNode<T> node(T key) {
+        return Stream.iterate(
+                this,
+                Objects::nonNull,
+                node -> node.next)
+                .filter(node -> node.getKey().compareTo(key) == 0)
+                .findFirst()
+                .orElse(null);
+    }
+
     @Override
     public String toString() {
         String nextStr = this.next != null ? this.next.toString() : "$";
