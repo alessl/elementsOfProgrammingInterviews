@@ -1,12 +1,12 @@
-package com.leonenko.epi._7_list_TODO;
+package com.leonenko.epi._7_list;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._7_list_TODO.TestUtils.assertListContainsKeys;
-import static com.leonenko.epi._7_list_TODO._73_DetectCycle.getCycle;
+import static com.leonenko.epi._7_list.TestUtils.assertListContainsKeys;
+import static com.leonenko.epi._7_list._73_DetectCycle.getCycle;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _73_DetectCycleTest {

@@ -1,4 +1,4 @@
-package com.leonenko.epi._7_list_TODO;
+package com.leonenko.epi._7_list;
 
 public class _711_IsLinkedListPalindrome {
 

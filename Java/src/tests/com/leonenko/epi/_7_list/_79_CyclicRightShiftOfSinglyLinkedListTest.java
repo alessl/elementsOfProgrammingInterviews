@@ -1,12 +1,10 @@
-package com.leonenko.epi._7_list_TODO;
+package com.leonenko.epi._7_list;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-import java.util.Random;
 
-import static com.leonenko.epi._7_list_TODO._79_CyclicRightShiftOfSinglyLinkedList.rotate;
-import static org.junit.jupiter.api.Assertions.*;
+import static com.leonenko.epi._7_list._79_CyclicRightShiftOfSinglyLinkedList.rotate;
 
 class _79_CyclicRightShiftOfSinglyLinkedListTest {
 

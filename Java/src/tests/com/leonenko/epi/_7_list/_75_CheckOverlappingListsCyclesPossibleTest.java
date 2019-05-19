@@ -1,10 +1,10 @@
-package com.leonenko.epi._7_list_TODO;
+package com.leonenko.epi._7_list;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._7_list_TODO._75_CheckOverlappingListsCyclesPossible.isOverlap;
+import static com.leonenko.epi._7_list._75_CheckOverlappingListsCyclesPossible.isOverlap;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class _75_CheckOverlappingListsCyclesPossibleTest {

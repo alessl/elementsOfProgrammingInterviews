@@ -1,12 +1,12 @@
-package com.leonenko.epi._7_list_TODO;
+package com.leonenko.epi._7_list;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.leonenko.epi._7_list_TODO.ListNode.singlyLinkedListOf;
-import static com.leonenko.epi._7_list_TODO.TestUtils.assertListContainsKeys;
-import static com.leonenko.epi._7_list_TODO._71_MergeTwoSortedLists.mergeLists;
+import static com.leonenko.epi._7_list.ListNode.singlyLinkedListOf;
+import static com.leonenko.epi._7_list.TestUtils.assertListContainsKeys;
+import static com.leonenko.epi._7_list._71_MergeTwoSortedLists.mergeLists;
 
 class _71_MergeTwoSortedListsTest {
 

@@ -1,4 +1,4 @@
-package com.leonenko.epi._7_list_TODO;
+package com.leonenko.epi._7_list;
 
 /**
  * Created by Alex on 5/12/2017.
