@@ -7,10 +7,13 @@ package com.leonenko.epi._7_list_TODO;
 public class _72_ReverseSubList {
 
     public static <T extends Comparable<T>> ListNode<T> reverseSubList(
-            ListNode<T> listHead, int from, int to) {
-        var newListHead = new ListNode<T>(null, listHead, null);
-        var subListHead = newListHead;
+            ListNode<T> listHead,
+            int from,
+            int to) {
 
+        var newListHead = new ListNode<T>(null, listHead, null);
+
+        var subListHead = newListHead;
         for (int i = 0; i < from; i++) {
             subListHead = subListHead.getNext();
         }

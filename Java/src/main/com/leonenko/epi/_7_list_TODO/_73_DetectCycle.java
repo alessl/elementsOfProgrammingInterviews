@@ -10,6 +10,7 @@ import java.util.List;
 public class _73_DetectCycle {
 
     public static List<ListNode<Integer>> getCycle(ListNode<Integer> head) {
+
         if (head == null || head.getNext() == null) {
             return List.of();
         }

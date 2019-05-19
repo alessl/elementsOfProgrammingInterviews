@@ -2,7 +2,10 @@ package com.leonenko.epi._7_list_TODO;
 
 public class _74_CheckOverlappingListsNoCycles {
 
-    static boolean isOverlap(ListNode<Integer> firstHead, ListNode<Integer> secondHead) {
+    static boolean isOverlap(
+            ListNode<Integer> firstHead,
+            ListNode<Integer> secondHead) {
+
         var firstSize = firstHead.size();
         var secondSize = secondHead.size();
 
@@ -24,11 +27,14 @@ public class _74_CheckOverlappingListsNoCycles {
         return false;
     }
 
-    private static ListNode<Integer> advanceHead(ListNode<Integer> head, int offset) {
+    private static ListNode<Integer> advanceHead(
+            ListNode<Integer> head,
+            int offset) {
+
         while (offset-- > 0 && head != null) {
             head = head.getNext();
         }
+
         return head;
     }
-
 }
