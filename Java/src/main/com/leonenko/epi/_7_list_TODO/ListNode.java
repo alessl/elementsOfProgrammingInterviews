@@ -21,28 +21,24 @@ public final class ListNode<T extends Comparable<T>> implements Comparable<ListN
     private ListNode<T> prev;
 
     public int size() {
-        return (int) Stream.iterate(
-                this,
-                Objects::nonNull,
-                node -> node.next)
-                .count();
+        return (int) nodeStream().count();
     }
 
-    public ListNode<T> tail() {
-        return Stream.iterate(
-                this,
-                Objects::nonNull,
-                node -> node.next)
+    public ListNode<T> addTail(ListNode<T> nodeToAdd) {
+        var tail = getTail();
+        tail.setNext(nodeToAdd);
+        return nodeToAdd;
+    }
+
+    public ListNode<T> getTail() {
+        return nodeStream()
                 .dropWhile(node -> node.getNext() != null)
                 .findFirst()
                 .orElse(null);
     }
 
-    public ListNode<T> node(T key) {
-        return Stream.iterate(
-                this,
-                Objects::nonNull,
-                node -> node.next)
+    public ListNode<T> findNode(T key) {
+        return nodeStream()
                 .filter(node -> node.getKey().compareTo(key) == 0)
                 .findFirst()
                 .orElse(null);
@@ -61,9 +57,16 @@ public final class ListNode<T extends Comparable<T>> implements Comparable<ListN
 
     @Override
     public Iterator<T> iterator() {
-        return Stream.iterate(this, Objects::nonNull, node -> node.next)
+        return nodeStream()
                 .map(ListNode::getKey)
                 .iterator();
+    }
+
+    private Stream<ListNode<T>> nodeStream() {
+        return Stream.iterate(
+                this,
+                Objects::nonNull,
+                node -> node.next);
     }
 
     static ListNode<Integer> doublyLinkedListOf(List<Integer> keys) {
@@ -81,14 +84,18 @@ public final class ListNode<T extends Comparable<T>> implements Comparable<ListN
         return head;
     }
 
-    static ListNode<Integer> singlyLinkedListOf(List<Integer> keys) {
+    static <T extends Comparable<T>> ListNode<T> singleton(T key) {
+        return new ListNode<>(key);
+    }
+
+    static <T extends Comparable<T>> ListNode<T> singlyLinkedListOf(List<T> keys) {
         var tailIndex = 1;
         var headIndex = 0;
 
         return keys.stream()
                 .map(ListNode::new)
                 .collect(() -> {
-                            var head = new ListNode<>(Integer.MIN_VALUE);
+                            var head = new ListNode<T>(null);
                             return Arrays.asList(head, head);
                         },
                         (headTail, node) -> {
@@ -102,5 +109,4 @@ public final class ListNode<T extends Comparable<T>> implements Comparable<ListN
                 .get(headIndex)
                 .getNext();
     }
-
 }

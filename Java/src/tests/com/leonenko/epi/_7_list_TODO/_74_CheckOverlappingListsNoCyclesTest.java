@@ -13,11 +13,30 @@ class _74_CheckOverlappingListsNoCyclesTest {
     private final ListNode<Integer> secondHead = ListNode.singlyLinkedListOf(List.of(1, 2, 3));
 
     @Test
-    void testOverlap() {
-        var secondTail = secondHead.tail();
-        secondTail.setNext(firstHead.node(4));
+    void testOverlapSameLengthLists() {
+        secondHead.addTail(firstHead.findNode(4));
 
         assertThat(isOverlap(firstHead, secondHead)).isTrue();
+    }
+
+    @Test
+    void testOverlapFirstIsLonger() {
+        var newFirstHead = ListNode.singleton(0);
+        newFirstHead.setNext(firstHead);
+
+        secondHead.addTail(firstHead.findNode(4));
+
+        assertThat(isOverlap(newFirstHead, secondHead)).isTrue();
+    }
+
+    @Test
+    void testOverlapSecondIsLonger() {
+        var newSecondHead = ListNode.singleton(0);
+        newSecondHead.setNext(secondHead);
+
+        newSecondHead.addTail(firstHead.findNode(4));
+
+        assertThat(isOverlap(firstHead, newSecondHead)).isTrue();
     }
 
     @Test
