@@ -26,10 +26,10 @@ class _73_DetectCycleTest {
     void testCycleExists() {
         tailNode.setNext(cycleStartNode);
 
-        List<ListNode<Integer>> cycle = getCycle(headNode);
+        var cycle = getCycle(headNode);
 
-        assertThat(cycle).hasSize(2);
-        assertThat(cycle).extracting(ListNode::getKey)
+        assertThat(cycle)
+                .extracting(ListNode::getKey)
                 .containsExactly(3, 6);
     }
 
