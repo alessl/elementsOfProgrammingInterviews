@@ -25,7 +25,7 @@ public class _74_CheckOverlappingListsNoCycles {
     }
 
     private static ListNode<Integer> advanceHead(ListNode<Integer> head, int offset) {
-        while (offset > 0 && head != null) {
+        while (offset-- > 0 && head != null) {
             head = head.getNext();
         }
         return head;
