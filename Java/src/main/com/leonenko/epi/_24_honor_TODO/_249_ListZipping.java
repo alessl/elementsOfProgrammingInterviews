@@ -32,7 +32,7 @@ public class _249_ListZipping {
         var fastIter = head;
         var slowIter = head;
 
-        while (fastIter.getNext() != null) {
+        while (fastIter != null && fastIter.getNext() != null) {
             fastIter = fastIter.getNext().getNext();
             slowIter = slowIter.getNext();
         }
